@@ -20,8 +20,10 @@ For Latest version of Artifactory Pro [download it from here](https://jfrog.com/
 
    ```sh 
    cd /opt 
-   wget https://jfrog.bintray.com/artifactory/jfrog-artifactory-oss-6.9.6.zip
+   wget -O artifactory-pro.deb "https://releases.jfrog.io/artifactory/artifactory-pro-debs/pool/jfrog-artifactory-pro/jfrog-artifactory-pro-[RELEASE].deb"
    ```
+   sudo apt install ./artifactory-pro.deb -y
+   sudo systemctl start artifactory.service
 
 1. extract artifactory tar.gz file
    ```sh
